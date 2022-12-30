@@ -7,6 +7,63 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Encriptador</p>
+    <header>
+        <div class="social">
+            <a href="https://www.facebook.com/alex170702/">
+                <img src="img/facebookLogo.png">
+            </a>
+            <a href="https://github.com/arekku17">
+                <img src="img/githubLogo.png">
+            </a>
+            <a href="https://www.linkedin.com/in/arekku17/">
+                <img src="img/linkedinLogo.png">
+            </a>
+        </div>  
+    </header>
+    <main>
+        <div class="inputContainer">
+            <div class="circles">
+                <img src="img/circleOff.jpg">
+                <img src="img/circleOff.jpg">
+                <img src="img/circleOff.jpg">
+                <img src="img/circleOff.jpg">
+                <img src="img/circleOff.jpg">
+                <img src="img/circleOff.jpg">
+                <img src="img/circleOff.jpg">
+            </div>
+            <div class="input">
+                <textarea placeholder="Ingrese el texto aquí">
+                </textarea>
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <div class="encriptarContainer">
+                    <img src="img/button.jpg" class="encriptarButton">
+                    <p>Encriptar</p>
+                </div>
+                <div class="desencriptarContainer">
+                    <img src="img/button.jpg" class="encriptarButton">
+                    <p>Desencriptar</p>
+                </div>
+            </div>
+        </div>
+        <div class="outputContainer">
+            <div class="errorContainer">
+                <img src="img/sus.png">
+                <h2>
+                    Ningún mensaje fue encontrado
+                </h2>
+                <p>
+                    Ingresa el texto que deseas encriptar o desencriptar
+                </p>
+            </div>
+            <div class="mensajeContainer">
+                <p class="mensaje"></p>
+                <button class="copiar">
+                    <p>Copiar</p>
+                </button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
