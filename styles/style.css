@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    border: 0;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CONTENEDOR QUE AYUDA A CENTRAR TODO */
+
+.center {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* CABECERA DE LA PAGINA */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    height: 7vh;
+    width: 28vh;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social a img {
+    height: 100%;
+}
+
+/* CONTENEDOR GENERAL DE LA PAGINA */
+
+
+/* ES EL MAIN DEL CONTENIDO */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* CONTENEDOR DE LA IZQUIERDA */
+
+.inputContainer {
+    width: 50%;
+    height: 87vh;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width: 100%;
+    height: 100%;
+}
+
+
+.containerCenter {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circles img {
+    width: 10%;
+}
+
+/* TEXT AREA */
+
+.input {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    background-color: #000;
+    color: #00C100;
+    font-size: 1.5rem;
+    width: 82%;
+    height: 90%;
+    border: #fff solid;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.input p {
+    width: 90%;
+    color: #414141;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+/* BOTONES */
+
+.buttons {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-around;
+}
+
+.buttons img {
+    height: 60%;
+    cursor: pointer;
+}
+
+
+.encriptarContainer,
+.desencriptarContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+}
+
+.buttons p {
+    font-weight: bold;
+    font-size: calc(10px * 100%);
+}
+
+/* CONTENEDOR DE LA DERECHA */
+
+.outputContainer {
+    width: 35%;
+    height: 87vh;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.errorContainer img {
+    width: 100%;
+    -webkit-filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+}
+
+.fondo1,
+.fondo2 {
+    background-color: #3799DC;
+}
+
+.fondo1 {
+    width: 90%;
+    height: 95%;
+    border: #1F2830 solid 10px;
+    border-radius: 15px;
+}
+
+.fondo2 {
+    border: #4F5F64 solid 7px;
+    height: calc(100% - 14px);
+}
+
+/* MENSAJE DE ERROR */
+
+.errorContainer {
+    color: white;
+    height: 80%;
+}
+
+.errorContainer h2 {
+    font-size: 2rem;
+}
+
+.errorContainer p,
+.errorContainer h2 {
+    -webkit-filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    width: 100%;
+    text-align: center;
+}
+
+/* MENSAJE NORMAL */
+
+.mensajeContainer {
+    -webkit-filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.mensaje{
+    width: 100%;
+}
+
+.copiar {
+    -webkit-filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    filter: drop-shadow(2px 3px 0 rgba(34, 34, 34, 0.3));
+    width: 70%;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+
+    --g: 0px;
+    /* the gap */
+    --b: 10px;
+    /* border thickness*/
+    --c: #ffffff;
+    /* the color */
+
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+    background:
+        var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%),
+        var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b), var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+}
+
+.copiar:hover{
+    --_p: 75%;
+    filter: grayscale(0%);
+}
+
+.copiar p{
+    font-weight: bold;
+}
+
+.hidden{
+    display: none !important;
+}
+
+@media screen and (max-width: 900px) {
+
+    .center{
+        justify-content: end;
+    }
+
+    .fondo2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social{
+        height: 7vh;
+    }
+
+    .input{
+        height: 60%;
+    }
+
+    body{
+        font-size: 12px;
+    }
+
+    .textInput{
+        font-size: 1rem;   
+    }
+
+    .input p{
+        font-size: 0.8rem;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 90vh;
+        justify-content: space-evenly;
+
+    }
+
+    .general{
+        height: 91vh;
+        width: 80%;
+    }
+
+    .inputContainer, .outputContainer{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .outputContainer{
+        height: 30vh;
+    }
+
+    .errorContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .errorContainer img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .titleError{
+        display: flex;
+        font-size: 0.5rem;
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+
+    .titleError h2{
+        width: fit-content;
+        font-size: 1.2rem;
+    }
+
+    .errorContainer p{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        height: max-content;
+    }
+
+    .mensaje{
+        font-size: 1.5rem;
+    }
+
+    .copiar{
+        font-size: 0.9rem;
+        --b: 6px;
+    }
+}

@@ -1,69 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador - Alura ONE</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
-    <header>
-        <div class="social">
-            <a href="https://www.facebook.com/alex170702/">
-                <img src="img/facebookLogo.png">
-            </a>
-            <a href="https://github.com/arekku17">
-                <img src="img/githubLogo.png">
-            </a>
-            <a href="https://www.linkedin.com/in/arekku17/">
-                <img src="img/linkedinLogo.png">
-            </a>
-        </div>  
-    </header>
-    <main>
-        <div class="inputContainer">
-            <div class="circles">
-                <img src="img/circleOff.jpg">
-                <img src="img/circleOff.jpg">
-                <img src="img/circleOff.jpg">
-                <img src="img/circleOff.jpg">
-                <img src="img/circleOff.jpg">
-                <img src="img/circleOff.jpg">
-                <img src="img/circleOff.jpg">
+    <div class="center">
+        <header>
+            <div class="social">
+                <a href="https://www.facebook.com/alex170702/">
+                    <img src="img/facebookLogo.png">
+                </a>
+                <a href="https://github.com/arekku17">
+                    <img src="img/githubLogo.png">
+                </a>
+                <a href="https://www.linkedin.com/in/arekku17/">
+                    <img src="img/linkedinLogo.png">
+                </a>
             </div>
-            <div class="input">
-                <textarea placeholder="Ingrese el texto aquí">
-                </textarea>
-                <p>Solo letras minusculas y sin acentos</p>
-            </div>
-            <div class="buttons">
-                <div class="encriptarContainer">
-                    <img src="img/button.jpg" class="encriptarButton">
-                    <p>Encriptar</p>
+        </header>
+        <div class="general">
+            <main>
+                <div class="inputContainer">
+                    <div class="containerCenter">
+                        <div class="circles">
+                            <img src="img/circleOff.jpg" class="circle">
+                            <img src="img/circleOff.jpg" class="circle">
+                            <img src="img/circleOff.jpg" class="circle">
+                            <img src="img/circleOff.jpg" class="circle">
+                            <img src="img/circleOff.jpg" class="circle">
+                            <img src="img/circleOff.jpg" class="circle">
+                            <img src="img/circleOff.jpg" class="circle">
+                        </div>
+                        <div class="input">
+                            <textarea placeholder="Escriba el texto aquí..." class="textInput"></textarea>
+                            <p class="aviso">Solo letras minusculas y sin acentos</p>
+                        </div>
+                        <div class="buttons">
+                            <div class="encriptarContainer">
+                                <img src="img/button.jpg" class="encriptarButton">
+                                <p>ENCRIPTAR</p>
+                            </div>
+                            <div class="desencriptarContainer">
+                                <img src="img/button.jpg" class="desencriptarButton">
+                                <p>DESENCRIPTAR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/container.jpeg" class="stretch" alt="" />
                 </div>
-                <div class="desencriptarContainer">
-                    <img src="img/button.jpg" class="encriptarButton">
-                    <p>Desencriptar</p>
+                <div class="outputContainer">
+                    <div class="containerCenter">
+                        <div class="fondo1">
+                            <div class="fondo2">
+                                <div class="errorContainer">
+                                    <div class="titleError">
+                                        <img src="img/sus.png">
+                                        <h2>Ningún mensaje fue encontrado</h2>
+                                    </div>
+                                    
+                                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                                </div>
+                                <div class="mensajeContainer hidden">
+                                    <p class="mensaje" id="textoACopiar"></p>
+                                    <button class="copiar">
+                                        <p class="copiarMsj">COPIAR</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/container.jpeg" class="stretch" alt="" />
                 </div>
-            </div>
+            </main>
         </div>
-        <div class="outputContainer">
-            <div class="errorContainer">
-                <img src="img/sus.png">
-                <h2>
-                    Ningún mensaje fue encontrado
-                </h2>
-                <p>
-                    Ingresa el texto que deseas encriptar o desencriptar
-                </p>
-            </div>
-            <div class="mensajeContainer">
-                <p class="mensaje"></p>
-                <button class="copiar">
-                    <p>Copiar</p>
-                </button>
-            </div>
-        </div>
-    </main>
+    </div>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
