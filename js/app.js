@@ -37,24 +37,24 @@ function esMayusculayAcento(letra) {
 }
 
 function hover(e) {
-  e.target.setAttribute('src', '../img/button_hover.png');
+  e.target.setAttribute('src', './img/button_hover.png');
 }
 
 function unhover(e) {
-  e.target.setAttribute('src', '../img/button.jpg');
+  e.target.setAttribute('src', './img/button.jpg');
 }
 
 function prenderCirculos() {
   habilitado = false;
   circulos.forEach((circulo, index) => {
-    setTimeout(() => { circulo.setAttribute('src', '../img/circleOn.jpg'); }, 500 * index);
+    setTimeout(() => { circulo.setAttribute('src', './img/circleOn.jpg'); }, 500 * index);
   })
 }
 
 function apagarCirculos() {
   habilitado = true;
   circulos.forEach((circulo, index) => {
-    circulo.setAttribute('src', '../img/circleOff.jpg');
+    circulo.setAttribute('src', './img/circleOff.jpg');
   })
 }
 
