@@ -12,5 +12,7 @@
 - La letra "a" es convertida para "ai"
 - La letra "o" es convertida para "ober"
 - La letra "u" es convertida para "ufat"
+## Deploy Page
+**https://arekku17.github.io/EncriptadorAmongUs/**
 ## Autor
 **José Alejandro Pérez Arenas**
