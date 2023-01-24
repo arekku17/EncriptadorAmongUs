@@ -5,9 +5,7 @@
 ### Ordenador
 ![](https://i.ibb.co/gSGRhfB/pc.png)
 ### Movil
-<p align="center">
-  <img src="https://i.ibb.co/vHhQP7s/Whats-App-Image-2023-01-19-at-1-31-29-PM.jpg" width="350" title="movil"/>
-</p>
+![](https://i.ibb.co/vHhQP7s/Whats-App-Image-2023-01-19-at-1-31-29-PM.jpg)
 ## Algoritmo de Encriptación
 - La letra "e" es convertida para "enter"
 - La letra "i" es convertida para "imes"
